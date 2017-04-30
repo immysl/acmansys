@@ -2,16 +2,14 @@
   "compilerOptions": {
     "allowJs": false,
     "allowSyntheticDefaultImports": true,
-    "baseUrl": "src", // enables you to import relative to this folder
     "jsx": "preserve", // enable JSX mode, but "preserve" tells TypeScript to not transform it (we'll use Babel)
     "moduleResolution": "node",
     "noImplicitAny": false,
     "noUnusedLocals": true,
     "removeComments": false,
-    "sourceMap": true, // make TypeScript generate sourcemaps    
+    "sourceMap": true, // make TypeScript generate sourcemaps
     "strictNullChecks": true,
-    "target": "es2015", // compile to ES2015 (Babel will do the rest)
-    "types": ["node"]
+    "target": "es2015" // compile to ES2015 (Babel will do the rest)
   },
   "exclude": [
     "node_modules" // don't run on any code in the node_modules directory
