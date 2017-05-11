@@ -2,9 +2,14 @@ import React from 'react';
 import { shallow } from 'enzyme';
 
 import App from './App';
+import Header from './layout/Header';
+import Footer from './layout/Footer';
 
-test('App renders Acmansys', () => {
-  const app = shallow(<App />);
+const wrapper = shallow(<App/>);
 
-  expect(app.contains(<h1>Acmansys</h1>)).toBe(true);
+test('App renders Header and Footer', () => {
+  expect(wrapper.containsAllMatchingElements([
+    <Header />,
+    <Footer />
+  ])).toBe(true);
 });

@@ -25,7 +25,8 @@ module.exports = {
     rules: [
       {
         test: /\.tsx?$/,
-        use: ['babel-loader', 'ts-loader']
+        use: ['babel-loader', 'ts-loader'],
+        exclude: /\.spec.tsx?$/
       },
       {
         test: /\.css$/,
@@ -35,6 +36,5 @@ module.exports = {
       }
     ]
   },
-  devtool: 'cheap-eval-source-map'
   // plugins: [new ExtractText({filename: 'index.css', allChunks: true})]
 };
